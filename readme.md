@@ -1,4 +1,31 @@
-Beskrivelse av hvordan jeg har løst oppgaven :
-Jeg startet første med å lage oppsettet med index.html, ordre.html, asset mappen, styles.css.
-Jeg startet med å sette opp index.html struktruren ogog fortsatte etter på med order.html. Jeg laget linken til styles.css inn i begge html filene.
-Bildet <img src="assets/images/orange-brown.png" alt="OPPO Find X9 Ultra" /> hentet ved å google: https://www.google.com/search/about-this-image?img=H4sIAAAAAAAA_wEXAOj_ChUIzPLoweOG5NItENrUwMrMoPjM0wFo336pFwAAAA%3D%3D&q=https://www.oppo.com/no/smartphones/series-find-x/find-x9-ultra/specs/&ctx=iv&hl=no-NO
+# Assignment 1 – OPPO Find X9 Ultra
+
+## Beskrivelse av hvordan jeg har løst oppgaven
+
+Jeg startet først med å lage oppsettet for prosjektet med `index.html`,
+`order.html`, `assets`-mappen og `css/styles.css`.
+
+Jeg startet deretter med å sette opp strukturen i `index.html` og fortsatte
+med `order.html`. Jeg la også inn lenke til `styles.css` i begge HTML-filene.
+
+## Bilder
+
+Bildet av OPPO Find X9 Ultra er hentet fra OPPO sin nettside:
+https://www.oppo.com/no/smartphones/series-find-x/find-x9-ultra/
+
+Bildet er lagret lokalt i:
+`assets/images/orange-brown.png`
+
+## GitHub
+
+Repository:
+https://github.com/idaelise20-tech/Assignment_1
+
+## Publisert nettside
+
+Lenke legges til når nettsiden er publisert.
+
+## Studentprosjekt
+
+Dette er et studentprosjekt laget i forbindelse med utdanning og er ikke
+en offisiell nettside for OPPO.
