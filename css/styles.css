@@ -1,13 +1,248 @@
+:root {
+  --primary-color: #dc5d0f;
+  --black: #000000;
+  --dark-gray: darkgray;
+  --white: #ffffff;
+  --light-gray: #ddd;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  font-family: Arial, sans-serif;
-  background-color: rgb(91, 91, 91);
-  color: rgb(255, 106, 0);
-  height: 100vh;
-  width: 100vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: var(--dark-gray);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: var(--black);
+  border-bottom: 2px solid var(--primary-color);
+}
+.navbar__links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+.navbar a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.navbar__logo a {
+  font-size: 26px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  position: relative;
+}
+.navbar__ultra {
+  font-weight: bold;
+}
+
+.navbar__trademark {
+  font-size: 12px;
+  vertical-align: top;
+  margin-left: 2px;
+}
+
+.navbar__link {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.navbar__link:hover {
+  color: #666;
+  border-bottom: 2px solid var(--primary-color);
+}
+.product {
+  text-align: center;
+  padding: 40px 20px;
+}
+.product h1 {
+  margin-bottom: 30px;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 0 auto 30px;
+}
+.product-video {
+  width: 100%;
+  max-width: 700px;
+  height: 394px;
+  display: block;
+  margin: 0 auto 30px;
+}
+.product__description {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: var(--black);
+}
+
+.buy-now {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: var(--black);
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.buy-now:hover {
+  background-color: #444;
+}
+.specifications {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: var(--dark-gray);
+  border: solid 5px var(--primary-color);
+  border-radius: 5px;
+}
+.specifications h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.specifications ul {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 40px;
+}
+
+/* Begge sider */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid var(--primary-color);
+}
+/* Order Form Styles */
+.order {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+}
+
+.order h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+.order label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+.order input[type="text"],
+.order input[type="email"],
+.order input[type="number"],
+.order textarea,
+.order select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.order fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#canyon-orange,
+#tundra-umber {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#canyon-orange {
+  background-color: #c96b3c;
+  border: 2px solid #c96b3c;
+}
+
+#tundra-umber {
+  background-color: #5b4636;
+  border: 2px solid #5b4636;
+}
+#canyon-orange:checked,
+#tundra-umber:checked {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+.order legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+.order input[type="radio"] {
+  margin-right: 5px;
+}
+
+.order input[type="radio"] + label {
+  display: inline;
+  margin-right: 20px;
+  font-weight: normal;
+}
+.order button {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.order button:hover {
+  background-color: var(--primary-color);
+}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .navbar__links {
+    gap: 15px;
+  }
+
+  .navbar__logo a {
+    font-size: 22px;
+  }
+
+  .product {
+    padding: 30px 15px;
+  }
+
+  .product-video {
+    height: 250px;
+  }
+
+  .specifications {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .specifications ul {
+    grid-template-columns: 1fr;
+  }
+
+  .order {
+    margin: 20px;
+    padding: 25px;
+  }
 }
