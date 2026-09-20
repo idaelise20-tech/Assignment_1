@@ -9,14 +9,16 @@
   <body>
     <header>
       <nav class="navbar">
-        <div class="logo">
-  <a href="index.html">
-    <span class="ultra">Ultra</span> Mobile<span class="trademark">&trade;</span>
-  </a>
-</div>
-        <ul class="nav-links">
-          <li><a href="index.html">Product</a></li>
-          <li><a href="order.html">Order</a></li>
+        <div class="navbar__logo">
+          <a href="index.html">
+            <span class="navbar__ultra">Ultra</span>
+            Mobile<span class="navbar__trademark">&trade;</span>
+          </a>
+        </div>
+
+        <ul class="navbar__links">
+          <li><a class="navbar__link" href="index.html">Product</a></li>
+          <li><a class="navbar__link" href="order.html">Order</a></li>
         </ul>
       </nav>
     </header>
@@ -31,45 +33,33 @@
           <input type="email" id="email" name="email" required />
 
           <label for="address">Street address:</label>
-<input type="text" id="address" name="address" required />
+          <input type="text" id="address" name="address" required />
 
-<label for="postal-code">Postal code:</label>
-<input
-  type="text"
-  id="postal-code"
-  name="postal-code"
-  required
-/>
+          <label for="postal-code">Postal code:</label>
+          <input type="text" id="postal-code" name="postal-code" required />
 
-<label for="city">City:</label>
-<input type="text" id="city" name="city" required />
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required />
 
           <fieldset>
-  <legend>Choose color:</legend>
+            <legend>Choose color:</legend>
+            <input
+              type="radio"
+              id="canyon-orange"
+              name="color"
+              value="canyon-orange"
+              required
+            />
+            <label for="canyon-orange">Canyon Orange</label>
 
-  <input
-    type="radio"
-    id="canyon-orange"
-    name="color"
-    value="canyon-orange"
-    required
-  />
-  <label for="canyon-orange">
-    <span class="color-circle canyon-orange"></span>
-    Canyon Orange
-  </label>
-
-  <input
-    type="radio"
-    id="tundra-umber"
-    name="color"
-    value="tundra-umber"
-  />
-  <label for="tundra-umber">
-    <span class="color-circle tundra-umber"></span>
-    Tundra Umber
-  </label>
-</fieldset>
+            <input
+              type="radio"
+              id="tundra-umber"
+              name="color"
+              value="tundra-umber"
+            />
+            <label for="tundra-umber">Tundra Umber</label>
+          </fieldset>
           <label for="storage">Storage:</label>
 
           <select id="storage" name="storage" required>
@@ -96,5 +86,6 @@
         This is a student project created for educational purposes and is not an
         official or affiliated OPPO website.
       </p>
+    </footer>
   </body>
 </html>

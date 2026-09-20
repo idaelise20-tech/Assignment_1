@@ -29,3 +29,11 @@ Lenke legges til når nettsiden er publisert.
 
 Dette er et studentprosjekt laget i forbindelse med utdanning og er ikke
 en offisiell nettside for OPPO.
+
+## Får inn GRID
+
+Bruker grid på spesifikasjonen. Og CSS variabels for å gjøre det leservennlig både på flere skjermstørrelser.
+
+## BEM-Eksempel
+
+Bruker den på navbar og paragragh for produktbeskrivelsen.
