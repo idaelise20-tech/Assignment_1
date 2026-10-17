@@ -40,7 +40,8 @@ body {
   text-decoration: none;
 }
 .buy-now:hover {
-  background-color: #444;
+  background-color: var(--black);
+  color: var(--white);
 }
 /* Specifications */
 .specifications {
@@ -155,6 +156,7 @@ body {
 }
 .order button:hover {
   background-color: var(--primary-color);
+  color: var(--black);
 }
 
 /* Responsive Design */
