@@ -240,11 +240,11 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
-    padding: 20px;
+    padding: var(--spacing-normal);
   }
 
   .navbar__links {
-    gap: 15px;
+    gap: var(--spacing-medium);
   }
 
   .navbar__logo a {
@@ -252,7 +252,7 @@ footer {
   }
 
   .product {
-    padding: 30px 15px;
+    padding: var(--spacing-big) var(--spacing-medium);
   }
 
   .product__video {
@@ -260,8 +260,8 @@ footer {
   }
 
   .specifications {
-    margin: 20px;
-    padding: 25px;
+    margin: var(--spacing-normal);
+    padding: var(--spacing-normal);
   }
 
   .specifications ul {
@@ -269,7 +269,7 @@ footer {
   }
 
   .order {
-    margin: 20px;
-    padding: 25px;
+    margin: var(--spacing-normal);
+    padding: var(--spacing-normal);
   }
 }
