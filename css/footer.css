@@ -1,0 +1,9 @@
+/* Footer works on both pages */
+footer {
+  text-align: center;
+  padding: var(--spacing-normal);
+  color: var(--white);
+  background-color: var(--black);
+  font-size: var(--font-size-small);
+  border-top: 1px solid var(--primary-color);
+}
