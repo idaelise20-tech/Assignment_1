@@ -10,7 +10,15 @@
   --white: #ffffff;
   --light-gray: #ddd;
   --font-main: "Oswald", sans-serif;
+  --spacing-extra-small: 4px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-normal: 24px;
+  --spacing-big: 32px;
   --spacing-large: 40px;
+  --spacing-extra-large: 60px;
+  --font-size-nav: 1.125rem; /* normalt 18 px */
+  --font-size-logo: 1.75rem; /* normalt 28 px */
 }
 /* Global Styles */
 * {
@@ -27,7 +35,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
+  padding: var(--spacing-normal) var(--spacing-extra-large);
   background-color: var(--black);
   border-bottom: 2px solid var(--primary-color);
 
@@ -36,7 +44,7 @@ body {
 .navbar__links {
   display: flex;
   list-style: none;
-  gap: 35px;
+  gap: var(--spacing-big);
 }
 .navbar a {
   color: var(--primary-color);
@@ -44,7 +52,7 @@ body {
 }
 
 .navbar__logo a {
-  font-size: 26px;
+  font-size: var(--font-size-logo);
   font-weight: normal;
   letter-spacing: 1px;
   position: relative;
@@ -56,11 +64,11 @@ body {
 .navbar__trademark {
   font-size: 12px;
   vertical-align: top;
-  margin-left: 2px;
+  margin-left: var(--spacing-extra-small);
 }
 
 .navbar__link {
-  font-size: 16px;
+  font-size: font-size-nav;
   padding-bottom: 5px;
 }
 
@@ -71,7 +79,7 @@ body {
 /* Product Section */
 .product {
   text-align: center;
-  padding: 40px 20px;
+  padding: var(--spacing-large) var(--spacing-medium);
 }
 .product h1 {
   margin-bottom: 30px;
